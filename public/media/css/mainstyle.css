@@ -1,0 +1,107 @@
+html, body, .body{
+	height: 100%; !important;
+}
+
+.body{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: Honeydew;
+}
+
+#top{
+	display: flex;
+	border: 2px solid red;
+	margin: 5px;
+	margin-bottom: 35px;
+	height: 45px;
+	min-height: 45px;
+	padding-left: 10px;
+	
+}
+#top a{
+	text-decoration: none;
+}
+
+.center{
+	display: flex;
+	flex-basis: 80%;
+	min-height: 200px;
+	flex-direction: row;
+}
+	.center #menu{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 15%;
+		margin-left: 4%;
+		max-width: 130px;
+		min-width: 130px;
+	}
+	.center #menu a{
+		white-space: nowrap;
+		color: DarkGreen;
+		text-decoration: none;
+		background-color: Honeydew;
+		border-bottom: 1px solid LightGreen;
+		padding-left: 10px;
+	}
+	.center #menu a:hover{
+		background-color: LightGreen;
+	}
+	.center #menu a:nth-child(1){
+		border-top: 1px solid LightGreen;
+	}
+	.center #main{
+		flex-basis: 85%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		border: 2px solid yellow;
+		margin-left: 10px;
+	}
+
+#main .head{
+	width: auto;
+	flex-basis: 5%;
+	padding-left:8px;
+}
+#main .work-window{
+	display: flex;
+	flex-basis: 85%;
+	margin: 0px 5px 0px 5px;
+}
+	#main .work-window .window{
+		border: 1px solid green;
+		flex-basis: 75%;
+		padding-left: 15px;
+	}
+	#main .work-window .list{
+		border: 1px solid red;
+		flex-basis: 25%;
+		padding-left: 10px;
+		overflow-y: scroll;
+	}
+#main .enter{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid black;
+	flex-basis: 10%;
+}
+#main .enter .enter-text{
+	flex-basis: 80%;	
+	min-height: 91%;
+	max-height: 91%;
+}
+#main .enter .enter-button{
+	flex-basis: 20%;
+	
+}
+
+#foot{
+	border: 2px solid green;
+	margin: 5px;
+	margin-top: 10px;
+	padding-right:10px;
+	text-align:right;
+	
+}
