@@ -28,9 +28,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ##Помощь по установке
 
-### Перейте в domains
+### Перейти в domains
 ### Прописать команды
-	git clone http.....
+	git clone https://github.com/ZhElnikov/Social.git
 	cd laravel
 	composer self-update
 	composer install
