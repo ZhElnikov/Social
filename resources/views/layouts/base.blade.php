@@ -4,11 +4,12 @@
 	<meta charset="utf-8">
 	<title>@yield('title')</title>
 	@section('styles')
+		<link rel="stylesheet" href="{{asset('media/bootstrap/css/bootstrap.min.css')}}">
 		<link href="{{asset('/media/css/mainstyle.css')}}" type="text/css" rel="stylesheet">
 	@show
 	<meta name="keywords" content="социальная,сеть, соц, вк, фейсбук, social, network">
 	<meta name="description" content="Новая социальная сеть">
-	    <link rel="stylesheet" href="{{asset('media/bootstrap/css/bootstrap.min.css')}}">
+	   
 </head>
 <body>
   <div class="body" id="site-window">
@@ -44,6 +45,7 @@
 		<p>Elnikov</p>
 	</div>
   </div>
+  @section('scripts')
   <script type="text/javascript">
 		var block=document.getElementById("chat");
 		block.scrollTop = block.scrollHeight;
@@ -54,5 +56,6 @@
 				document.getElementById("enter").submit.click();
 		}
    </script>
+   @show
 </body>
 </html>

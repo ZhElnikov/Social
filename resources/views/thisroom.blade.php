@@ -3,6 +3,13 @@
 	{{$title}}
 @endsection
 
+@section('styles')
+	@parent
+@endsection
+@section('scripts')
+	@parent
+@endsection
+
 @section('room')
 	{{$room->name}}
 @endsection
